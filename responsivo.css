@@ -1,0 +1,67 @@
+@media (min-width: 1800px){
+   .conteudo{
+      padding: 8% 13% 7% 13%;
+   }
+   .conteudo .bem-vindo{
+      font-size: 30px;
+      
+   }
+   .conteudo .slogan{
+      font-size: 4rem;
+      line-height: 57px;
+      margin-bottom: 10px;
+   }
+   .texto{
+      max-width: 690px;
+   }
+   .conteudo .paragrafo{
+      font-size: 18px;
+   }
+   .conteudo .container-carrosel .container-imagem .ativa{
+      width: 670px;
+   }
+   .prova{
+      padding:50px 200px 0 200px;
+   }
+}
+@media (max-width: 414px){
+   .navigation{
+      display: none;
+   }
+   .conteudo .container-carrosel .container-imagem .hamburguer{
+      display: none;
+   }
+   .conteudo .texto .bem-vindo{
+      font-size: 22px;
+   }
+
+   /*-------------------------------------------  SEÇÃO CARDS  ---------------------------------------*/
+   .prova .texto-clientes .subtitulo-clientes{
+      line-height: 27px;
+      font-size: 18px;
+   }
+   .prova .texto-clientes .titulo-clientes{
+      line-height: 54px;
+   }
+   .container-clientes{
+   
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .cliente{
+      max-width: 320px;
+   }
+   
+   /*------------------------------------------ SEÇÃO SOBRE --------------------------------------------*/
+
+   .bolha-rosa{
+      display: none;
+   }
+   .sobre-informacoes .titulo-sobre h2{
+      margin-top: 13px;
+      line-height: 23px;
+      display: flex;
+      text-align: center;
+   }
+}

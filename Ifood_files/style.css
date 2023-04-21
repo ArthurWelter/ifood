@@ -1,0 +1,228 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --red: #d63a25;
+    --white: #fff;
+    --dark: #1e1c2a;
+}
+
+.navigation{
+    z-index: 1;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 9px 40px;
+    box-shadow: 0 0.1rem 10px #cccccc9f;
+    position: fixed;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    font-weight:300;
+    
+    /* text-underline-offset: 4px; */
+}
+.nav-menu i{
+    cursor: pointer;
+    font-size: 1.4rem;
+    color: #f2d23e;
+}
+
+
+.navigation ul li a{
+    color: var(--dark);
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+.navigation ul li a:hover{
+    transform: scale(2);
+    color: var(--red);
+    /* text-decoration: none; */
+}
+
+.navigation .logo{
+    /* text-decoration: none; */
+    color: var(--red);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.logo span{
+    color: var(--dark)
+}
+
+.nav-menu .botao button{
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 10px;
+    width: 90px;
+    height: 30px;
+    border: 1px #f2d13ed5 solid;
+    transition: 0.6s ease-in-out;
+}
+
+.nav-menu .botao button:hover{
+    transform: scale(1.05);
+    background-color: #f2d13e52;
+}
+
+.menu{
+    cursor: pointer;
+    display: none;
+}
+
+.menu .barra{
+    display: block;
+    width: 26px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #762c20;
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+
+.menu .barra:nth-child(1),
+.menu .barra:nth-child(3){
+    background-color: #f5ad59;
+}
+
+/* --------------------------------------------------------------------- */
+.conteudo{
+    background-color: var(--white);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8% 8% 0% 8%;
+}
+
+.texto{
+    max-width: 37rem;
+}
+.texto .bem-vindo{
+    font-size: 25px;
+    color: #74a721;
+}
+.texto .slogan{
+    line-height: 3rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.texto .paragrafo{
+    font-weight: 400;
+    margin-bottom: 30px;
+    line-height: 22px;
+}
+.botao-pedir{
+    font-size: 18px;
+    padding: 13px 40px;
+    background-color: #74a721;
+    color: var(--white);
+    font-weight: 500;
+    border-radius: 10px;
+    transition: all 0.7s;
+}
+
+.botao-pedir:hover{
+    background-color:#86c423;
+}
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 11px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #cecece;
+    border-radius: 10px;
+}
+
+.teste{
+    height: 100%;
+    background-color: #1e1c2a;
+}
+
+.imagem{
+    animation: moverImagem 0.8s;
+}
+@keyframes moverImagem{
+    from{
+        opacity: 0;
+        -webkit-transform: translateX(-1000);
+    }
+    to{
+        opacity: 1;
+        -webkit-transform: translateX();
+    }
+}
+/*------------------------------------------------------------------- */
+.container-imagem .hamburguer{
+    display: none;
+}
+.container-imagem .hamburguer.ativa{
+    display: block;
+} 
+.container-botoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 7rem;
+    height: 100vh;
+    gap: 7px;
+}
+.container-carrosel .botoes.ativa {
+    background-color:rgba(245, 131, 0, 0.39);
+    width: 16px;
+    height: 16px;
+}
+.container-carrosel .botoes{
+    transition: 0.7s all;
+}
+.container-carrosel .botoes:hover {
+    background-color:rgba(245, 131, 0, 0.192);
+}
+.botoes{
+    cursor: pointer;
+    background-color: transparent;
+    border:#762c20 3px solid;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+.carrosel:nth-child(1),
+.carrosel:nth-child(3){
+    border-color: #f5ad59;
+}
+
+/*--------------------------------------------------------------------*/
+
+.prova-social{
+    margin-top: -30px;
+    /* background-color: #f2d13e; f2*/
+    height: 50vh;
+}
+.onda{
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;                      
+    /* va ate get waves io configure a que voce quer e cole a onda na seção que ela aparecerá primeiro */
+
+}
+
